@@ -1,0 +1,415 @@
+:root {
+    --primary-color: #A38C9C; /* Rosa Viejo Oscuro */
+    --secondary-color: #B2A2A7; /* Malva Suave */
+    --accent-color: #E2DBD6; /* Beige Claro */
+    --text-dark: #3F3F3F; /* Gris Carbón */
+    --text-light: #FBFBFB; /* Blanco cálido */
+    --bg-light: #F7F4F2; /* Fondo beige muy claro */
+    --btn-color: #7A6977; /* Morado Suave para botones */
+    --whatsapp-color: #25D366; /* Verde WhatsApp */
+    --whatsapp-hover-color: #128C7E; /* Verde WhatsApp más oscuro */
+}
+
+/* --- ESTILOS BASE PARA MÓVIL (MOBILE-FIRST) --- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+    filter: brightness(1.1);
+}
+
+.header-text {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 10px 0 0;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.subtitle {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    margin: 5px 0 0;
+    line-height: 1.4;
+}
+
+main {
+    padding: 30px 0;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-top: 0;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+p {
+    text-align: center;
+    font-size: 1.05em;
+    color: var(--secondary-color);
+}
+
+.note {
+    font-size: 0.9em;
+    margin-top: 20px;
+    font-style: italic;
+    color: #888;
+    text-align: center;
+}
+
+/* Estilos de los botones */
+.booking-buttons-container,
+.whatsapp-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    background-color: var(--btn-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #6C5C6A;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.btn-whatsapp {
+    background-color: var(--btn-color);
+}
+.btn-whatsapp:hover {
+    background-color: #6C5C6A;
+}
+
+
+/* Estilos de la sección de servicios */
+.services-section h2 {
+    margin-bottom: 30px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.service-item.reverse {
+    flex-direction: column;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.service-item img:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-item .service-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.service-info h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.service-info p {
+    text-align: center;
+    color: var(--text-dark);
+}
+
+/* --- ESTILOS DEL FOOTER --- */
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px 20px;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espaciado entre secciones */
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.footer-left-col,
+.footer-right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-title,
+.find-us {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.footer-social-links a,
+.whatsapp-buttons-footer a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social-links a:hover,
+.whatsapp-buttons-footer a:hover {
+    color: var(--btn-color);
+}
+
+.footer-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.address {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+/* Estilo para el mapa incrustado */
+.footer-map-container {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.footer-map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: var(--secondary-color);
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    color: var(--btn-color);
+}
+
+
+/* --- MEDIA QUERIES PARA PANTALLAS MÁS GRANDES --- */
+
+@media (min-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        max-width: 200px;
+        margin-right: 20px;
+    }
+    
+    .header-text {
+        text-align: left;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .subtitle {
+        font-size: 1.1em;
+        margin: 0;
+    }
+
+    main {
+        padding: 40px 0;
+    }
+
+    section {
+        padding: 40px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 2.4em;
+    }
+
+    h3 {
+        font-size: 1.9em;
+    }
+    
+    .btn {
+        padding: 14px 30px;
+        font-size: 1.1em;
+        max-width: 320px;
+    }
+
+    .booking-buttons-container,
+    .whatsapp-buttons-container {
+        gap: 18px;
+        margin-top: 30px;
+    }
+
+    .service-item {
+        flex-direction: row;
+    }
+    
+    .service-item.reverse {
+        flex-direction: row-reverse;
+    }
+    
+    .service-item img {
+        max-width: 400px;
+    }
+
+    .service-info h3,
+    .service-info p {
+        text-align: left;
+    }
+
+    /* ESTILOS DEL FOOTER EN PANTALLAS GRANDES */
+    .footer-content {
+        flex-direction: row;
+        justify-content: flex-start; /* Cambio clave para evitar el espacio vacío */
+        align-items: flex-start;
+        text-align: left;
+        gap: 50px; /* Espaciado entre las dos columnas */
+    }
+
+    .footer-left-col {
+        flex-basis: 40%; /* La columna izquierda ocupa el 35% del espacio */
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .footer-right-col {
+        flex-basis: 60%; /* La columna del mapa ocupa el 65% del espacio */
+        align-items: flex-start;
+    }
+
+    .footer-map-container {
+        width: 100%; /* El mapa ocupa el 100% del ancho de su columna */
+        height: 200px;
+        max-width: none; /* Eliminamos el máximo para que se expanda */
+    }
+    
+    .footer-bottom {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
