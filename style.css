@@ -1,3 +1,25 @@
+@media (max-width: 991px) {
+    .service-item {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .service-item img {
+        width: 90vw;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .service-info {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5px;
+        margin-top: 0;
+    }
+    .service-info p, .service-info ul {
+        text-align: left;
+        word-break: break-word;
+    }
+}
 
 
 :root {
