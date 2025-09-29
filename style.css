@@ -417,6 +417,7 @@ footer {
     font-style: italic;
     color: var(--secondary-color);
     margin: 0;
+    font-size:small;
 }
 
 /* Estilo para el mapa incrustado */
