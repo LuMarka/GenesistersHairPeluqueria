@@ -562,18 +562,18 @@ footer {
         justify-content: flex-start; /* Cambio clave para evitar el espacio vacío */
         align-items: flex-start;
         text-align: left;
-        gap: 10px; /* Espaciado entre las dos columnas */
+        gap: 20px; /* Espaciado entre las dos columnas */
     }
 
     .footer-left-col {
-        flex-basis: 45%; /* La columna izquierda ocupa el 35% del espacio */
+        flex-basis: 45%; 
         align-items: flex-start;
         gap: 10px;
     }
     
     .footer-right-col {
         flex-basis: 55%; /* La columna del mapa ocupa el 65% del espacio */
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .footer-map-container {
