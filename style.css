@@ -1,4 +1,5 @@
 
+
 :root {
     --primary-color: #592e48; /* color1 */
     --secondary-color: #793c54; /* color2 */
@@ -9,7 +10,6 @@
     --btn-color: #793c54; /* color2 para botones */
     --whatsapp-color: #25D366; /* Verde WhatsApp */
     --whatsapp-hover-color: #128C7E; /* Verde WhatsApp más oscuro */
-}
 
 /* --- MODAL DE IMAGEN AMPLIADA --- */
 .modal-img {
@@ -131,6 +131,31 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+    }
+    .logo {
+        order: 0;
+        margin-right: 24px;
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        max-width: 80px;
+        margin-right: 0;
+    }
+    .header-text {
+        order: 1;
+        text-align: left;
+    }
+}
 }
 
 .logo img {
@@ -259,6 +284,48 @@ p {
     align-items: center;
     gap: 30px;
     margin-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .service-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .service-item.reverse {
+        flex-direction: row-reverse;
+    }
+    .service-item img {
+        max-width: 400px;
+    }
+    .service-info h3,
+    .service-info p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item img {
+        width: 90vw;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .service-info {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5px;
+    }
+    .service-info p {
+        text-align: center;
+        word-break: break-word;
+    }
+}
 }
 
 .service-item.reverse {
@@ -403,15 +470,31 @@ footer {
 
     .header-container {
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         gap: 2rem;
     }
-
-    .logo img {
-        max-width: 200px;
-        margin-right: 20px;
+    .logo {
+        order: 0;
+        margin-right: 24px;
+        display: flex;
+        align-items: center;
     }
+    .logo img {
+        max-width: 80px;
+        margin-right: 0;
+    }
+    .header-text {
+        order: 1;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        max-width: 40px !important;
+    }
+}
     
     .header-text {
         text-align: left;
@@ -504,5 +587,10 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
+    }
+
+    @media (max-width: 600px) {
+    .logo img {
+        max-width: 40px;
     }
 }
