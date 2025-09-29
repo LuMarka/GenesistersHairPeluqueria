@@ -326,7 +326,7 @@ p {
         word-break: break-word;
     }
 }
-}
+
 
 .service-item.reverse {
     flex-direction: column;
