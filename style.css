@@ -1,43 +1,3 @@
-@media (max-width: 600px) {
-    .footer-content {
-        flex-direction: row;
-        gap: 0;
-        align-items: flex-start;
-        text-align: left;
-    }
-    .footer-left-col {
-        flex-basis: 65%;
-        align-items: flex-start;
-        gap: 6px;
-    }
-    .footer-right-col {
-        flex-basis: 35%;
-        align-items: flex-start;
-    }
-}
-@media (max-width: 991px) {
-    .service-item {
-        flex-direction: column !important;
-        align-items: center;
-    }
-    .service-item img {
-        width: 90vw;
-        max-width: 320px;
-        height: auto;
-        margin-bottom: 20px;
-    }
-    .service-info {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0 5px;
-        margin-top: 0;
-    }
-    .service-info p, .service-info ul {
-        text-align: left;
-        word-break: break-word;
-    }
-}
-
 
 :root {
     --primary-color: #592e48; /* color1 */
@@ -468,6 +428,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 15px;
+    margin-bottom: 18px;
 }
 
 .footer-map-container iframe {
@@ -633,3 +594,43 @@ footer {
         max-width: 40px;
     }
 }
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: row;
+        gap: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .footer-left-col {
+        flex-basis: 65%;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .footer-right-col {
+        flex-basis: 35%;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 991px) {
+    .service-item {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .service-item img {
+        width: 90vw;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .service-info {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5px;
+        margin-top: 0;
+    }
+    .service-info p, .service-info ul {
+        text-align: left;
+        word-break: break-word;
+    }
+}
+
