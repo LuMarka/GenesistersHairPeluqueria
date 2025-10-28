@@ -748,7 +748,7 @@ footer {
     }
 
     .subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .hero-content {
@@ -810,6 +810,7 @@ footer {
     .whatsapp-buttons-footer {
         gap: 12px;
     }
+
     
     .social-title,
     .find-us {
