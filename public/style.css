@@ -47,7 +47,7 @@ header {
     max-width: 100%;
     padding: 0 10px;
     height: auto;
-    min-height: 70px; 
+    min-height: 80px; 
 }
 
 .logo {
@@ -852,4 +852,3 @@ footer {
         font-size: 1.2rem;
     }
 }
-
